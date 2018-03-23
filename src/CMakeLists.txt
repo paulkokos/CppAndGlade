@@ -1,0 +1,5 @@
+set(SOURCE_FILES main.cpp)
+link_directories(${GTKMM_LIBRARY_DIRS})
+include_directories(${GTKMM_INCLUDE_DIRS})
+add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES} main.cpp)
+target_link_libraries(${CMAKE_PROJECT_NAME} ${GTKMM_LIBRARIES})
